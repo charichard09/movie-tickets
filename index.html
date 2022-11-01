@@ -21,26 +21,45 @@
         Click which of the movies you'd like to see:
         <div class="row">
           <div class="col-4">
-            <label for="jsCode"><img src="./img/code1.png" id="codeImage1" alt="Picture of The Shining." class="img-fluid"></label>
-            <input type="radio" id="jsCode" name="radio-codeImage" value="jsCode" class="hidden" checked>
+            <label for="the-Shining"><img src="./img/code1.png" id="codeImage1" alt="Picture of The Shining." class="img-fluid"></label>
+            <input type="radio" id="the-Shining" name="radio-codeImage" value="The Shining" class="hidden-button" checked>
             <br>
-            <span id="badge1" class="badge badge-success hidden">Selected</span>
           </div>
           <div class="col-4">
             <label for="pythonCode"><img src="./img/code2.png" id="codeImage2" alt="Picture of The Exorcist." class="img-fluid"></label>
-            <input type="radio" id="pythonCode" name="radio-codeImage" value="pythonCode" class="hidden">
+            <input type="radio" id="pythonCode" name="radio-codeImage" value="pythonCode" class="hidden-button">
             <br>
-            <span id="badge2" class="badge badge-success hidden">Selected</span>
           </div>
           <div class="col-4">
             <label for="cSharpCode"><img src="./img/code3.png" id="codeImage3" alt="Picture of Chucky." class="img-fluid"></label>
-            <input type="radio" id="cSharpCode" name="radio-codeImage" value="cSharpCode" class="hidden">
+            <input type="radio" id="cSharpCode" name="radio-codeImage" value="cSharpCode" class="hidden-button">
             <br>
-            <span id="badge3" class="badge badge-success hidden">Selected</span>
           </div>
+          <label for="new-time">Select Age</label>
+          <input type="text"  class="form-control" id="new-age" name="new-age">
+          <select name="age-group" id="select-age-group">
+            <option value="">--Please choose an option--</option>
+            <option value="2">Senior (65+)</option>
+            <option value="1">Adult (14-65)</option>
+            <option value="0">Youth (0-13)</option>
+          </select><br><br>
+          <label for="new-time">Select Time</label>
+          <input type="text"  class="form-control" id="new-time" name="new-time">
+          <select name="time-group" id="select-time">
+            <option value="">--Please choose an option--</option>
+            <option value="2">1:00</option>
+            <option value="1">3:30</option>
+            <option value="0">5:00</option>
+          </select><br><br>
         </div>
       </div>
+      <button type="submit">Submit</button>
     </form>
+  </div>
+
+  <div id="ticket-total-div">
+    <h3>Final Ticket Price:</h3>
+    <p id="ticket-total"></p>
   </div>
 </body>
 </html>
